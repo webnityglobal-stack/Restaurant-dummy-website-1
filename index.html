@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpiceHut | Taste the Real India</title>
+
+    <meta name="description" content="Enjoy authentic Indian biryani, thali,
+          paneer and delicious Indian food at SpiceHut.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span>♨</span> SpiceHut
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="cart.html" class="cart-link">
+                🛒 Cart (<span id="cartCount">0</span>)
+            </a>
+
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    AUTHENTIC INDIAN CUISINE
+                </p>
+
+                <h1>
+                    Taste the <br>
+                    <span>Real India.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Delicious biryani, flavourful curries,
+                    fresh naan and traditional thalis —
+                    made with love and served with perfection.
+                </p>
+
+                <div class="hero-buttons">
+
+
+                    <a href="menu.html" class="btn secondary">
+                        Explore Menu
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=1200&q=85"
+                    alt="Delicious Indian Biryani"
+                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=1200&q=85';">
+
+                <div class="floating-card">
+                    <strong>⭐ 4.9 / 5</strong>
+                    <p>Authentic Indian Taste</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Restaurant Features -->
+        <section class="features">
+
+            <div class="feature">
+                <span>✦</span>
+                <div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Quality in every bite</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>♧</span>
+                <div>
+                    <h3>Fast Delivery</h3>
+                    <p>At your doorstep</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>♨</span>
+                <div>
+                    <h3>Authentic Taste</h3>
+                    <p>Traditional recipes</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <span>✓</span>
+                <div>
+                    <h3>Hygienic Kitchen</h3>
+                    <p>Safe and clean</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Categories -->
+        <section class="section container">
+
+            <div class="section-heading">
+                <p class="eyebrow">EXPLORE OUR MENU</p>
+                <h2>Popular Categories</h2>
+                <p>Discover your favourite Indian flavours.</p>
+            </div>
+
+            <div class="category-grid">
+
+                <a href="menu.html?category=Biryani" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=500&q=80"
+                        alt="Biryani">
+                    <h3>Biryani</h3>
+                </a>
+
+                <a href="menu.html?category=Thali" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=500&q=80"
+                        alt="Indian thali">
+                    <h3>Thali</h3>
+                </a>
+
+                <a href="menu.html?category=Paneer" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=500&q=80"
+                        alt="Paneer curry">
+                    <h3>Paneer</h3>
+                </a>
+
+                <a href="menu.html?category=Dal%20%26%20Curry" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=500&q=80"
+                        alt="Dal and curry">
+                    <h3>Dal & Curry</h3>
+                </a>
+
+                <a href="menu.html?category=Naan%20%26%20Roti" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?auto=format&fit=crop&w=500&q=80"
+                        alt="Indian naan">
+                    <h3>Naan & Roti</h3>
+                </a>
+
+                <a href="menu.html?category=Desserts" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=500&q=80"
+                        alt="Indian Dessert">
+                    <h3>Desserts</h3>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Popular Products -->
+        <section class="section container">
+
+            <div class="section-heading">
+                <p class="eyebrow">CUSTOMER FAVOURITES</p>
+                <h2>Most Loved Dishes</h2>
+                <p>Freshly prepared, full of flavour.</p>
+            </div>
+
+            <div class="product-grid" id="popularProducts">
+                <!-- JavaScript adds product cards here -->
+            </div>
+
+            <div class="center-button">
+                <a href="menu.html" class="btn">
+                    Explore Full Menu →
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Promotional Banner -->
+        <section class="container">
+
+            <div class="promo-banner">
+                <div>
+                    <p class="eyebrow">MADE WITH LOVE</p>
+                    <h2>Good Food. Great Company.</h2>
+                    <p>Bring everyone together over a delicious meal.</p>
+                </div>
+
+                <a href="menu.html" class="btn">
+                    Discover Menu →
+                </a>
+            </div>
+
+        </section>
+
+        <!-- About -->
+        <section class="section container" id="about">
+
+            <div class="section-heading">
+                <p class="eyebrow">OUR STORY</p>
+
+                <h2>A Little Tradition in Every Bite</h2>
+
+                <p>
+                    At SpiceHut, we celebrate the rich flavours
+                    of Indian cuisine. From aromatic biryani to
+                    creamy paneer curries and homestyle thalis,
+                    every dish is inspired by traditional recipes
+                    and prepared with care.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a href="index.html" class="logo">
+            <span>♨</span> SpiceHut
+        </a>
+
+        <p>Authentic Indian flavours, made fresh with love.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p>
+            © <span id="year"></span> SpiceHut. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Orders | SpiceHut</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">✦</span>
+      Spice<span>Hut</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart</a>
+      <a href="my-orders.html" class="active">My Orders</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </header>
+
+  <main class="orders-page">
+
+    <div class="orders-heading">
+      <span class="section-tag">YOUR SPICEHUT ACCOUNT</span>
+      <h1>My <span>Orders</span></h1>
+      <p>Track your delicious orders and view your order history.</p>
+    </div>
+
+    <div class="orders-container">
+
+      <div class="orders-topbar">
+        <h2>Order History</h2>
+        <span id="totalOrders">0 Orders</span>
+      </div>
+
+      <div id="ordersList"></div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>© <span id="currentYear"></span> SpiceHut. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

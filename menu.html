@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Menu | SpiceHut</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span>♨</span> SpiceHut
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="cart.html" class="cart-link">
+                🛒 Cart (<span id="cartCount">0</span>)
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- Menu Hero -->
+    <section class="menu-hero container">
+
+        <p class="eyebrow">MADE FRESH, SERVED HOT</p>
+
+        <h1>
+            Explore Our <span>Menu.</span>
+        </h1>
+
+        <p>
+            From royal biryani to creamy paneer,
+            discover your next favourite dish.
+        </p>
+
+    </section>
+
+
+    <!-- Search and Filters -->
+    <main class="container section">
+
+        <div class="menu-toolbar">
+
+            <div class="search-box">
+                <span>⌕</span>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search biryani, paneer, thali..."
+                    aria-label="Search dishes"
+                >
+            </div>
+
+            <select id="sortSelect" aria-label="Sort products">
+                <option value="default">Sort: Recommended</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+                <option value="rating">Top Rated</option>
+            </select>
+
+        </div>
+
+
+        <!-- Category Buttons -->
+        <div class="filter-buttons" id="filterButtons">
+
+            <button class="filter-btn active"
+                    data-category="All">
+                All Dishes
+            </button>
+
+            <button class="filter-btn"
+                    data-category="Biryani">
+                🍚 Biryani
+            </button>
+
+            <button class="filter-btn"
+                    data-category="Thali">
+                🍱 Thali
+            </button>
+
+            <button class="filter-btn"
+                    data-category="Paneer">
+                🥘 Paneer
+            </button>
+
+            <button class="filter-btn"
+                    data-category="Dal & Curry">
+                🍛 Dal & Curry
+            </button>
+
+            <button class="filter-btn"
+                    data-category="Naan & Roti">
+                🫓 Naan & Roti
+            </button>
+
+            <button class="filter-btn"
+                    data-category="Desserts">
+                🍮 Desserts
+            </button>
+
+            <button class="filter-btn"
+                    data-category="Drinks">
+                🥤 Drinks
+            </button>
+
+        </div>
+
+
+        <!-- Product Count -->
+        <div class="menu-result">
+            <h2>Our Delicious Dishes</h2>
+            <p id="resultCount">Loading dishes...</p>
+        </div>
+
+
+        <!-- Products rendered by JavaScript -->
+        <div class="product-grid" id="menuProducts">
+        </div>
+
+
+        <!-- Empty Search State -->
+        <div class="empty-state" id="emptyState" hidden>
+            <div>🍽️</div>
+            <h3>No dishes found</h3>
+            <p>Try another search or select a different category.</p>
+
+            <button class="btn" id="resetFilters">
+                Show All Dishes
+            </button>
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a href="index.html" class="logo">
+            <span>♨</span> SpiceHut
+        </a>
+
+        <p>Authentic Indian flavours, made fresh with love.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p>
+            © <span id="year"></span> SpiceHut.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

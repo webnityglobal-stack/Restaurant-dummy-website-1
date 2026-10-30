@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Checkout | SpiceHut</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">✦</span>
+      Spice<span>Hut</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </header>
+
+  <main class="checkout-page">
+
+    <div class="checkout-heading">
+      <span class="section-tag">ALMOST THERE</span>
+      <h1>Complete Your <span>Order</span></h1>
+      <p>Fresh food is on its way to you.</p>
+    </div>
+
+    <form id="checkoutForm" class="checkout-layout">
+
+      <section class="checkout-details">
+
+        <div class="checkout-card">
+          <h2>01. Contact Information</h2>
+
+          <div class="checkout-field">
+            <label for="customerName">Full Name</label>
+            <input type="text" id="customerName" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="checkout-field">
+            <label for="customerPhone">Phone Number</label>
+            <input type="tel" id="customerPhone" placeholder="10-digit mobile number" pattern="[0-9]{10}" maxlength="10" required>
+          </div>
+
+          <div class="checkout-field">
+            <label for="customerEmail">Email Address</label>
+            <input type="email" id="customerEmail" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="checkout-card">
+          <h2>02. Delivery Address</h2>
+
+          <div class="checkout-field">
+            <label for="customerAddress">Full Address</label>
+            <textarea id="customerAddress" rows="3" placeholder="House no, street, area..." required></textarea>
+          </div>
+
+          <div class="checkout-form-grid">
+            <div class="checkout-field">
+              <label for="customerCity">City</label>
+              <input type="text" id="customerCity" placeholder="City" required>
+            </div>
+
+            <div class="checkout-field">
+              <label for="customerPincode">PIN Code</label>
+              <input type="text" id="customerPincode" placeholder="6-digit PIN" pattern="[0-9]{6}" maxlength="6" required>
+            </div>
+          </div>
+
+          <div class="checkout-field">
+            <label for="orderNotes">Delivery Instructions (Optional)</label>
+            <textarea id="orderNotes" rows="2" placeholder="Any special instructions?"></textarea>
+          </div>
+        </div>
+
+        <div class="checkout-card">
+          <h2>03. Payment Method</h2>
+
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="COD" checked>
+            <span>
+              <strong>Cash on Delivery</strong>
+              <small>Pay when your order arrives</small>
+            </span>
+            <span>💵</span>
+          </label>
+
+          <label class="payment-option">
+            <input type="radio" name="paymentMethod" value="Online">
+            <span>
+              <strong>Online Payment</strong>
+              <small>UPI, Cards & Net Banking</small>
+            </span>
+            <span>💳</span>
+          </label>
+
+        </div>
+
+      </section>
+
+      <aside class="checkout-summary">
+        <h2>Order Summary</h2>
+
+        <div id="checkoutItems"></div>
+
+        <div class="summary-divider"></div>
+
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="checkoutSubtotal">₹0</strong>
+        </div>
+
+        <div class="summary-row">
+          <span>Delivery Fee</span>
+          <strong id="checkoutDelivery">₹0</strong>
+        </div>
+
+        <div class="summary-row">
+          <span>Taxes</span>
+          <strong id="checkoutTax">₹0</strong>
+        </div>
+
+        <div class="summary-divider"></div>
+
+        <div class="summary-row total-row">
+          <span>Total</span>
+          <strong id="checkoutTotal">₹0</strong>
+        </div>
+
+        <button type="submit" class="checkout-btn">
+          Place My Order →
+        </button>
+
+        <p class="secure-note">🔒 Your information is kept secure.</p>
+
+        <a href="cart.html" class="continue-shopping">
+          ← Back to Cart
+        </a>
+      </aside>
+
+    </form>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>© <span id="currentYear"></span> SpiceHut. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

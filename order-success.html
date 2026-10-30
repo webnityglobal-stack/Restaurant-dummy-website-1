@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Order Confirmed | SpiceHut</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">✦</span>
+      Spice<span>Hut</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </header>
+
+  <main class="success-page">
+
+    <div class="success-card">
+
+      <div class="success-animation">
+        <div class="success-circle">
+          <span>✓</span>
+        </div>
+      </div>
+
+      <span class="section-tag">ORDER CONFIRMATION</span>
+
+      <h1>Thank You for <span>Your Order!</span></h1>
+
+      <p class="success-message">
+        Your delicious food journey has officially started.
+        We're preparing something special for you!
+      </p>
+
+      <div class="order-id-box">
+        <span>YOUR ORDER ID</span>
+        <strong id="successOrderId">SH000000</strong>
+      </div>
+
+      <div class="order-status">
+        <span class="status-dot"></span>
+        <span id="successOrderStatus">Order Placed Successfully</span>
+      </div>
+
+      <div class="success-order-details">
+
+        <h2>Order Details</h2>
+
+        <div id="successOrderItems"></div>
+
+        <div class="summary-divider"></div>
+
+        <div class="success-info-row">
+          <span>Customer Name</span>
+          <strong id="successCustomerName">-</strong>
+        </div>
+
+        <div class="success-info-row">
+          <span>Phone Number</span>
+          <strong id="successCustomerPhone">-</strong>
+        </div>
+
+        <div class="success-info-row">
+          <span>Delivery Address</span>
+          <strong id="successCustomerAddress">-</strong>
+        </div>
+
+        <div class="success-info-row">
+          <span>Payment Method</span>
+          <strong id="successPayment">-</strong>
+        </div>
+
+        <div class="summary-divider"></div>
+
+        <div class="success-total">
+          <span>Total Paid / Payable</span>
+          <strong id="successTotal">₹0</strong>
+        </div>
+
+      </div>
+
+      <div class="success-actions">
+        <a href="menu.html" class="success-primary-btn">
+          Order More Food →
+        </a>
+
+        <a href="index.html" class="success-secondary-btn">
+          Back to Home
+        </a>
+      </div>
+
+      <p class="success-thankyou">
+        Made with ❤️ by SpiceHut
+      </p>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>© <span id="currentYear"></span> SpiceHut. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
